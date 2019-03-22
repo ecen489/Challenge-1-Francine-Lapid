@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
     // convert from bitmap to byte array
     public static byte[] getBytes (Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 0, stream);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
         return stream.toByteArray();
     }
 
